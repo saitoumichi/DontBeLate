@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="電車の時間を確認するサイトです。">
+  <title>電車の時間</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="ロゴ.png">
+</head>
+
+<body>
+  <script src="main.js"></script>
+  <header>
+    <h1><span class="title-blue">電車</span><span class="title-brown">の</span><span class="title-purple">時間</span></h1>
+    <h5 class="map"><a href="https://www.google.co.jp/maps/@34.996224,135.725056,13z?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Googleマップ</a></h5>
+  </header>
+
+  <main>
+  <nav>
+    <h4>目次</h4>
+    <ol>
+      <li><a href="#go">行き帰り</a></li>
+      <li><a href="#hours">時間</a></li>
+      <li><a href="#timeTable">タイムテーブル</a></li>
+      <li><a href="form">お問い合わせ</a></li>
+    </ol>
+  </nav>
+
+  <section id="go">
+  <table>
+    <thead>
+      <tr><th><h3>行きか帰りかを選択して下さい</h3></th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><h4 class="iki"><a href="">行き</a></h4></td>
+        <td><h4 class="kaeri"><a href="">帰り</a></h4></td>
+      </tr>
+    </tbody>
+  </table>
+  </section>
+
+  <section id="hours">
+  <table>
+    <thead>
+      <tr><th><h3>何時台かを選択してください</h3></th></tr>
+    </thead>
+    <tbody>
+  <tr><td><h4>5:00-7:00</h4></td></tr>
+  <tr><td><h4>7:00-9:00</h4></td></tr>
+  <tr><td><h4>9:00-11:00</h4></td></tr>
+  <tr><td><h4>11:00-13:00</h4></td></tr>
+  <tr><td><h4>13:00-15:00</h4></td></tr>
+  <tr><td><h4>15:00-17:00</h4></td></tr>
+  <tr><td><h4>17:00-19:00</h4></td></tr>
+  <tr><td><h4>19:00-21:00</h4></td></tr>
+  <tr><td><h4>21:00-23:00</h4></td></tr>
+  <tr><td><h4>23:00-24:00</h4></td></tr>
+    </tbody>
+  </table>
+</section>
+
+  <section id="timeTable">
+    <h4>Time Table</h4>
+  </section>
+  </main>
+
+  <section id="form">
+  <form>
+    <h4>お問い合わせ</h4>
+    <div>
+      <label for="name">お名前</label>
+    <input type="text" id="name" placeholder="例：齋藤未智">
+    </div>
+    <div>
+      <label>
+        メールアドレス
+        <input type="email" placeholder="例：ms20054869tv@docomo.ne.jp">
+      </label>
+    </div>
+    <div>
+      <label for="content">内容</label>
+    <textarea id="content" placeholder="例：目的地に接続できません"></textarea>
+    </div>
+  </form>
+  </section>
+  <div>
+    <button type="submit">送信</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr><th>年</th><th>出来事</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>2011</td><td>サービス開始</td></tr>
+      <tr><td>2022</td><td>256times開始</td></tr>
+    </tbody>
+  </table>
+
+  <article>
+  <footer>
+    <small>投稿日：<time datetime="2025-06-14 23:51">6月14日</time> (c)齋藤未智</small>
+  </footer>
+  </article>
+
+</body>
+</html>
