@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 205;
+  --background-end-rgb: 255, 255, 205;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(255 255 205);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+  background-color: skyblue;
+  height: 70px;
+  padding-top: 25px;
+  border-radius: 20px;
+}
+
+.iki {
+  display: inline-block;
+  width: 160px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  text-decoration: none;
+  color: inherit;
+  background-color: #99FF33;
+  border-radius:50px;
+}
+
+.kaeri {
+  display: inline-block;
+  width: 160px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  text-decoration: none;
+  color: inherit;
+  background-color: #33CC99;
+  border-radius:50px;
+}
+
+.gozen{
+  display: inline-block;
+  width: 160px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  text-decoration: none;
+  color: inherit;
+  background-color: #FFCC66;
+  border-radius:8px;
+}
+
+.gogo{
+  display: inline-block;
+  width: 160px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  text-decoration: none;
+  color: inherit;
+  background-color: #999900;
+  border-radius:8px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 400px;
+}
+
+th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+button:hover {
+  font-weight: bold;
+}
+
+.selected {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+/* レスポンシブデザイン */
+@media (min-width: 900px) {
+  body {
+    background: rgb(255 205 205);
+  }
+  
+  header {
+    background-color: yellow;
+    height: 100px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  h3 {
+    background-color: green;
+    height: 50px;
+    padding-top: 25px;
+  }
+  
+  .map {
+    text-align: right;
+    padding: 7px;
+  }
+  
+  .iki {
+    display: inline-block;
+    width: 88px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 32px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .kaeri {
+    display: inline-block;
+    width: 88px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 32px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 400px;
+  }
+  
+  th {
+    border: 1px solid black;
+    padding: 8px;
+    background: lightgray;
+  }
+  
+  td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  button:hover {
+    font-weight: bold;
+  }
+} 
