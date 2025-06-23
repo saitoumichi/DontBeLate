@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import DirectionSelector from '@/components/DirectionSelector'
-import TimeSelector from '@/components/TimeSelector'
 import TimeTable from '@/components/TimeTable'
 import Footer from '@/components/Footer'
 
@@ -19,11 +18,6 @@ export default function Home() {
         <DirectionSelector 
           selectedDirection={selectedDirection}
           onDirectionSelect={setSelectedDirection}
-        />
-        
-        <TimeSelector 
-          selectedTimeRange={selectedTimeRange}
-          onTimeRangeSelect={setSelectedTimeRange}
         />
         
         <TimeTable 

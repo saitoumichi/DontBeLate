@@ -73,6 +73,18 @@ h3 {
   border-radius:8px;
 }
 
+.TimeTable{
+  display: inline-block;
+  width: 120px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  color: inherit;
+  background-color: #BDB76B;
+  border-radius:16px;
+}
+
 table {
   border-collapse: collapse;
   width: 400px;

@@ -12,18 +12,18 @@ const DirectionSelector: React.FC<DirectionSelectorProps> = ({
   selectedDirection, 
   onDirectionSelect 
 }) => {
-  const router = useRouter()
+  const router = useRouter();
 
   const handleClick = (direction: 'outbound' | 'return') => {
     onDirectionSelect(direction)
     if (direction === 'outbound') {
-      router.push('/iki')
+      router.push('/iki&kaeri/iki')
     } else {
-      router.push('/kaeri')
+      router.push('iki&kaeri/kaeri')
     }
   }
   return (
-    <section id="go" className="mt-10 flex justify-center">
+    <section id="go" className="mt-24 flex justify-center">
       <table className="border-none border-collapse">
         <thead>
           <tr>

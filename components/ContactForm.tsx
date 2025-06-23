@@ -28,10 +28,10 @@ const ContactForm: React.FC = () => {
   }
 
   return (
-    <section id="form">
+    <section id="form" className="mt-24 flex justify-center">
       <form onSubmit={handleSubmit}>
         <div>
-          <h5>お名前をどうぞ</h5>
+          <h5 className="font-bold text-center bg-green-300 mb-1 px-2 py-1 rounded">お名前をどうぞ↓</h5>
           <input
             type="text"
             id="name"
@@ -39,10 +39,11 @@ const ContactForm: React.FC = () => {
             value={formData.name}
             onChange={handleInputChange}
             placeholder="例：齋藤未智"
+            className="rounded text-center bg-yellow-300 w-60 mt-1 mb-1 px-2 py-1 rounded"
           />
         </div>
         <div>
-          <h5>メールアドレスもどうぞ</h5>
+          <h5 className="font-bold text-center bg-green-300 mt-1 mb-1 px-2 py-1 rounded">メールアドレスもどうぞ↓</h5>
           <input
             type="email"
             id="email"
@@ -50,20 +51,22 @@ const ContactForm: React.FC = () => {
             value={formData.email}
             onChange={handleInputChange}
             placeholder="例：ms20054869tv@docomo.ne.jp"
+            className="rounded text-center bg-yellow-300 w-60 mt-1 mb-1 px-2 py-1 rounded"
           />
         </div>
         <div>
-          <h5>何があったんですかね</h5>
+          <h5 className="font-bold text-center bg-green-300 mt-1 mb-1 px-2 py-1 rounded">何があったんですかね↓</h5>
           <textarea
             id="content"
             name="content"
             value={formData.content}
             onChange={handleInputChange}
-            placeholder="例：目的地に接続できません"
+            placeholder="例：目的地に接続できません😭"
+            className="rounded text-center bg-yellow-300 w-60 mt-1 mb-1 px-2 py-1 rounded"
           />
         </div>
         <div>
-          <button type="submit">ここ押すと送信できちゃうよ</button>
+          <button type="submit" className="font-bold rounded w-60 text-center bg-blue-300 mt-8 mb-1 px-2 py-1 rounded">ここ押すと送信できるよ😃</button>
         </div>
       </form>
     </section>
