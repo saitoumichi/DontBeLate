@@ -629,14 +629,14 @@ video {
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .mt-6 {
   margin-top: 1.5rem;
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mt-5 {
-  margin-top: 1.25rem;
 }
 .flex {
   display: flex;
@@ -900,80 +900,11 @@ button:hover {
   font-weight: bold;
 }
 
-/* レスポンシブデザイン */
-@media (min-width: 900px) {
-  body {
-    background: rgb(255 205 205);
-  }
-  
-  header {
-    background-color: yellow;
-    height: 100px;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
-  h3 {
-    background-color: green;
-    height: 50px;
-    padding-top: 25px;
-  }
-  
-  .map {
-    text-align: right;
-    padding: 7px;
-  }
-  
-  .iki {
-    display: inline-block;
-    width: 88px;
-    height: 32px;
-    border: 1px solid black;
-    border-radius: 8px;
-    text-align: center;
-    line-height: 32px;
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .kaeri {
-    display: inline-block;
-    width: 88px;
-    height: 32px;
-    border: 1px solid black;
-    border-radius: 8px;
-    text-align: center;
-    line-height: 32px;
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 400px;
-  }
-  
-  th {
-    border: 1px solid black;
-    padding: 8px;
-    background: lightgray;
-  }
-  
-  td {
-    border: 1px solid black;
-    padding: 8px;
-  }
-  
-  button:hover {
-    font-weight: bold;
-  }
-}
 @media (min-width: 768px) {
 
   .md\:bg-yellow-300 {
     --tw-bg-opacity: 1;
     background-color: rgb(253 224 71 / var(--tw-bg-opacity, 1));
   }
-} 
+}
+
