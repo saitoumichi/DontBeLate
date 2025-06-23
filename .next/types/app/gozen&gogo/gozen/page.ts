@@ -1,8 +1,8 @@
 // File: /Users/michico/Documents/DontBeLate/app/gozen&gogo/gozen/page.tsx
-import * as entry from '../../../../../app/gozen&gogo/gozen/page.js'
+import * as entry from '../../../../../app/iki_gozen&gogo/gozen/page.jsx'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../app/gozen&gogo/gozen/page.js')
+type TEntry = typeof import('../../../../../app/iki_gozen&gogo/gozen/page.jsx')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

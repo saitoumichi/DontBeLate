@@ -1,7 +1,12 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
   "/iki&kaeri/iki/page": "app/iki&kaeri/iki/page.js",
-  "/gozen&gogo/gozen/page": "app/gozen&gogo/gozen/page.js",
-  "/iki&kaeri/kaeri/page": "app/iki&kaeri/kaeri/page.js"
+  "/page": "app/page.js",
+  "/iki&kaeri/kaeri/page": "app/iki&kaeri/kaeri/page.js",
+  "/kaeri_gozen&gogo/gozen/page": "app/kaeri_gozen&gogo/gozen/page.js",
+  "/kaeri_zikann/1gen/page": "app/kaeri_zikann/1gen/page.js",
+  "/kaeri_zikann/2gen/page": "app/kaeri_zikann/2gen/page.js",
+  "/kaeri_gozen&gogo/gogo/page": "app/kaeri_gozen&gogo/gogo/page.js",
+  "/kaeri_zikann/3gen/page": "app/kaeri_zikann/3gen/page.js",
+  "/kaeri_zikann/4gen/page": "app/kaeri_zikann/4gen/page.js",
+  "/kaeri_zikann/5gen/page": "app/kaeri_zikann/5gen/page.js"
 }

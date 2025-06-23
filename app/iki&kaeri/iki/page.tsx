@@ -10,9 +10,9 @@ const IkiPage = () => {
   const handleDirectionSelect = (direction: 'outbound' | 'return') => {
     setSelectedDirection(direction)
     if (direction === 'outbound') {
-      router.push('/gozen&gogo/gozen')
+      router.push('/iki_gozen&gogo/gozen')
     } else {
-      router.push('/gozen&gogo/gogo')
+      router.push('/iki_gozen&gogo/gogo')
     }
   }
   return (

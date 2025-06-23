@@ -1,25 +1,18 @@
 'use client'
 
-import React from 'react'
+import React,{useState} from 'react'
 import { useRouter } from 'next/navigation'
 
-interface DirectionSelectorProps {
-  selectedDirection: 'outbound' | 'return' | null
-  onDirectionSelect: (direction: 'outbound' | 'return') => void
-}
+const KaeriPage = () => {
+  const [selectedDirection, setSelectedDirection] = useState<'outbound' | 'return' | null>(null)
+  const router = useRouter();
 
-const DirectionSelector: React.FC<DirectionSelectorProps> = ({ 
-  selectedDirection, 
-  onDirectionSelect 
-}) => {
-  const router = useRouter()
-
-  const handleClick = (direction: 'outbound' | 'return') => {
-    onDirectionSelect(direction)
+  const handleDirectionSelect = (direction: 'outbound' | 'return') => {
+    setSelectedDirection(direction)
     if (direction === 'outbound') {
-      router.push('/gozen')
+      router.push('/kaeri_gozen&gogo/gozen')
     } else {
-      router.push('/gogo')
+      router.push('/kaeri_gozen&gogo/gogo')
     }
   }
   return (
@@ -35,13 +28,13 @@ const DirectionSelector: React.FC<DirectionSelectorProps> = ({
             <td className="border-none flex flex-col items-center">
               <h4 
                 className={`gozen ${selectedDirection === 'outbound' ? 'selected' : ''} cursor-pointer mt-8 mb-8 font-bold text-sm`}
-                onClick={() => handleClick('outbound')}
+                onClick={() => handleDirectionSelect('outbound')}
               >
                 午前
               </h4>
               <h4 
                 className={`gogo ${selectedDirection === 'return' ? 'selected' : ''} cursor-pointer font-bold text-sm`}
-                onClick={() => handleClick('return')}
+                onClick={() => handleDirectionSelect('return')}
               >
                 午後
               </h4>
@@ -53,4 +46,4 @@ const DirectionSelector: React.FC<DirectionSelectorProps> = ({
   )
 }
 
-export default DirectionSelector
+export default KaeriPage
