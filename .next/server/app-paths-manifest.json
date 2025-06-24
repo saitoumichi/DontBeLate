@@ -1,3 +1,9 @@
 {
+  "/iki_gozen&gogo/gozen/page": "app/iki_gozen&gogo/gozen/page.js",
+  "/iki&kaeri/iki/page": "app/iki&kaeri/iki/page.js",
+  "/iki_zikann/2gen/page": "app/iki_zikann/2gen/page.js",
+  "/iki_zikann/1gen/page": "app/iki_zikann/1gen/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/alltable/page": "app/alltable/page.js",
   "/page": "app/page.js"
 }

@@ -1,77 +1,88 @@
-# 電車の時間確認アプリ
+# 大学行き電車の時刻確認アプリ
 
-Next.js/TypeScriptで作成された電車の時間を確認するWebアプリケーションです。
+大学へ向かう電車の時刻を確認できるウェブアプリケーションです。講義の時間に合わせて「行き」と「帰り」の電車の時刻を簡単に検索できます。
 
-## 機能
+## ✨ 機能
 
-- 行き/帰りの方向選択
-- 時間帯選択（5:00-24:00）
-- タイムテーブル表示
-- お問い合わせフォーム
-- レスポンシブデザイン
-- SSR/SSG対応
+- **行き/帰り選択**: 大学への「行き」と大学からの「帰り」を選択できます。
+- **午前/午後選択**: 時間帯を「午前」と「午後」で絞り込めます。
+- **講義時間ごとの時刻表示**: 1限から5限までの各講義に合わせた電車の時刻表を表示します。
+- **全時刻表表示**: その日の全ての電車の時刻を一覧で確認できます。
+- **お問い合わせフォーム**: アプリに関するお問い合わせができます。
+- **レスポンシブデザイン**: スマートフォンやPCなど、様々なデバイスで快適に利用できます。
 
-## 技術スタック
+## 🚀 技術スタック
 
 - Next.js 14 (App Router)
 - TypeScript
 - Tailwind CSS
 - React 18
+- Capacitor
 
-## セットアップ
+## 🛠️ セットアップ
 
-1. 依存関係をインストール:
-```bash
-npm install
-```
+1.  依存関係をインストール:
+    ```bash
+    npm install
+    ```
 
-2. 開発サーバーを起動:
-```bash
-npm run dev
-```
+2.  開発サーバーを起動:
+    ```bash
+    npm run dev
+    ```
 
-3. ブラウザで http://localhost:3000 を開く
+3.  ブラウザで `http://localhost:3000` を開く
 
 ## ビルド
 
-本番用ビルドを作成:
+本番用のビルドを作成します:
+
 ```bash
 npm run build
 ```
 
-本番サーバーを起動:
-```bash
-npm start
-```
+## 📂 プロジェクト構造
 
-## プロジェクト構造
+主要なディレクトリとファイルは以下の通りです。
 
 ```
 app/
-├── layout.tsx          # ルートレイアウト
-├── page.tsx            # メインページ
-└── globals.css         # グローバルスタイル
+├── alltable/              # 全時刻表ページ
+├── contact/               # お問い合わせページ
+├── iki_gozen&gogo/        # 行き（午前・午後）選択ページ
+│   ├── gogo/
+│   └── gozen/
+├── iki_zikann/            # 行き（講義時間別）の時刻表ページ
+│   ├── 1gen/
+│   ├── 2gen/
+│   ├── 3gen/
+│   ├── 4gen/
+│   └── 5gen/
+├── iki&kaeri/             # 行き・帰り選択ページ
+│   ├── iki/
+│   └── kaeri/
+├── kaeri_gozen&gogo/      # 帰り（午前・午後）選択ページ
+│   ├── gogo/
+│   └── gozen/
+├── kaeri_zikann/          # 帰り（講義時間別）の時刻表ページ
+│   ├── 1gen/
+│   ├── 2gen/
+│   ├── 3gen/
+│   ├── 4gen/
+│   └── 5gen/
+├── layout.tsx             # ルートレイアウト
+├── page.tsx               # トップページ
+└── globals.css            # グローバルCSS
 
-components/              # Reactコンポーネント
-├── Header.tsx          # ヘッダー
-├── Navigation.tsx      # ナビゲーション
-├── DirectionSelector.tsx  # 方向選択
-├── TimeSelector.tsx       # 時間選択
-├── TimeTable.tsx          # タイムテーブル
+components/                # Reactコンポーネント
 ├── ContactForm.tsx        # お問い合わせフォーム
-└── Footer.tsx             # フッター
+├── DirectionSelector.tsx  # 行き・帰り選択
+├── Footer.tsx             # フッター
+├── Header.tsx             # ヘッダー
+├── TimeSelector.tsx       # 時間選択
+└── TimeTable.tsx          # 時刻表
 
-public/                  # 静的ファイル
-└── favicon.ico         # ファビコン
 ```
-
-## Next.jsの利点
-
-- **SSR/SSG** - サーバーサイドレンダリング
-- **App Router** - 新しいルーティングシステム
-- **画像最適化** - 自動画像最適化
-- **パフォーマンス** - 自動コード分割
-- **SEO** - 検索エンジン最適化
 
 ## ライセンス
 
